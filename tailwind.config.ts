@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import Colors from "./constants/Colors";
 
 const config: Config = {
   content: [
@@ -11,6 +12,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:Colors.primary,
+        meow:Colors.meow
       },
     },
   },
