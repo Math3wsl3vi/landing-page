@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
     <hr className='mx-52'/>
-    <div className='flex flex-row justify-between items-start mx-32 mt-10'>
+    <div className='flex flex-col gap-10 md:flex-row justify-between items-start mx-32 mt-10'>
         
     <div className='item-center'>
         <h1>CONTACT US</h1>

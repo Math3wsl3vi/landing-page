@@ -14,7 +14,7 @@ const Featured = () => {
          height={30}
          className='my-8'
         />
-    <div className='flex flex-row justify-between mx-32 gap-5 flex-wrap'>
+    <div className='flex flex-row justify-center items-center md:justify-between md:mx-32 gap-5 flex-wrap'>
          {data_product.map((product)=>(
             <div key={product.id} className='border border-gray-200 cursor-pointer'>
                 <Image 
@@ -22,6 +22,7 @@ const Featured = () => {
                 alt={product.name}
                 width={200}
                 height={100}
+                className='w-[350px] md:w-[200px]'
                 />
                 <div className='p-5'>
                 <h2 className='text-sm text-center'>{product.name}</h2>
