@@ -1,19 +1,20 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <div className='flex flex-row mx-32 justify-between'>
-        <div className='absolute top-2 left-2'>
+        <div className='absolute top-2 left-2 pb-32'>
             <Image src="/logo2.png" alt='logo' width={140} height={140}/>
         </div>
-        <div className='mt-10'>
+        <div className='mt-10 i'>
             <ul className='md:flex flex-row gap-10 text-sm font-medium hidden'>
                 <li><a href="/" className=' hover:text-primary hover:translate-y-2'>HOME</a></li>
-                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>STORE</a></li>
-                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>ABOUT</a></li>
-                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>BLOG</a></li>
-                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>CONTACT</a></li>
+                <Link href='/shop'><li className=' hover:text-primary hover:translate-y-0.5'>STORE</li></Link>
+                <Link href='/shop'><li className=' hover:text-primary hover:translate-y-0.5'>ABOUT</li></Link>
+                <Link href='/shop'><li className=' hover:text-primary hover:translate-y-0.5'>BLOG</li></Link>
+                <Link href='/shop'><li className=' hover:text-primary hover:translate-y-0.5'>CONTACT</li></Link>
             </ul>
         </div>
         <div className='mt-10 hidden md:flex flex-row gap-3'>
