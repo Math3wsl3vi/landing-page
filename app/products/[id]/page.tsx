@@ -53,13 +53,22 @@ export default function ProductPage({params}: ProductPageProps){
             </div>
         </div>
        <div className='flex flex-row justify-center gap-10'> 
-        <div className=''>
-        <Image
+        <div className='flex flex-col gap-2'>
+       <div className='cursor-pointer'>
+       <Image
         src={product.image}
         alt='image'
-        width={400}
-        height={400}
+        width={320}
+        height={300}
         />
+       </div>
+        <div className='flex flex-row gap-3 cursor-pointer'>
+        <Image src={product.image} alt='rate' width={71} height={70}/>
+        <Image src={product.image} alt='rate' width={71} height={70}/>
+        <Image src={product.image} alt='rate' width={71} height={70}/>
+        <Image src={product.image} alt='rate' width={71} height={70}/>
+        {/* <Image src={product.image} alt='rate' width={70} height={70}/> */}
+        </div>
         </div>
        <div className=''>
        <h1 className='text-2xl font-medium'>{product.name}</h1>
