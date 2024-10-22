@@ -4,7 +4,7 @@ import ShopBreadcrumb from './ShopBreadcrumb'
 
 const Banner = () => {
   return (
-    <div className='bg-[#f5f5f5] h-[222px] mt-10 mb-20 flex justify-between items-center px-3 md:px-20'>
+    <div className='bg-[#f5f5f5] h-[222px] mt-10 mb-20 flex justify-between items-center px-3 md:px-96'>
             <div className='hidden md:block'>
             <Image
         src='/img08.jpg'

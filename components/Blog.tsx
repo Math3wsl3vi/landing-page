@@ -28,7 +28,7 @@ const Blog = () => {
        </div>
        <div className='p-2 text-center'>
         <h4 className='text-[13px]'>Post by: <span className='text-meow'> Levi Mathews</span></h4>
-        <h1 className='font-medium font-sans'>Is Your plant plant planning to eat you</h1>
+        <h1 className='font-medium font-sans'>Is Your plant plant planning to eat you?</h1>
         <p className='text-[13px] font-sans font-light'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...</p>
        </div>
         </div>

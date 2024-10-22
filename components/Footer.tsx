@@ -49,7 +49,7 @@ const Footer = () => {
     </div>
     <hr className='mx-52 my-10'/>
     <div className='text-center mt-10 mb-5 mx-3'> 
-        <h1 className='font-sans text-meow'>Copyright 2024 by <span className='text-primary'>Mantle Networks </span>- All right reserved</h1>
+        <h1 className='font-sans text-meow'>Copyright 2024 by <Link href='https://math3wsl3vi.github.io/mantle-networks/'><span className='text-primary'>Mantle Networks </span></Link>- All right reserved</h1>
     </div>
 
     </>

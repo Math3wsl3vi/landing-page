@@ -7,17 +7,17 @@ const Sort = () => {
         <div className='w-full flex flex-row gap-4'>
         <div className='w-1/3'>
         <div className='border border-gray-200 flex felx-row justify-between p-2 cursor-pointer'>
-        <input type="text" className='' />
+        <input type="text" className='outline-none' />
         <Image src='/search.png' alt='search' width={25} height={25}/>
         </div>
 
         </div>
         <div className='w-2/3 flex flex-row justify-between items-center'>
         <div className='flex felx-row gap-2 items-center'>
-        <div className='border border-gray-200 p-2 cursor-pointer'>
+        <div className='border border-gray-200 p-2 cursor-pointer hover:bg-primary'>
             <Image src='/menu.png' alt='menu' width={20} height={20}/>
         </div>
-        <div className='border border-gray-200 p-2 cursor-pointer'>
+        <div className='border border-gray-200 p-2 cursor-pointer hover:bg-primary'>
         <Image src='/menu.png' alt='menu' width={20} height={20}/>
         </div>
         <h1 className='font-sans text-xl text-meow'>Showing 1 - 12 out of 24 results</h1>
