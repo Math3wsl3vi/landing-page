@@ -10,9 +10,13 @@ const page = () => {
         {/* banner */}
         <ShopBanner/>
         {/* sort */}
+        <div className='flex flex-col'>
+        {/* sort */}
         <Sort/>
         {/* items */}
         <Products/>
+        </div>
+        
         {/* newsletter */}
         <Newletter/>
     </div>
