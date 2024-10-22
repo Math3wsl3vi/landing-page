@@ -13,6 +13,8 @@ type Product={
     price: string;
     image: string;
     desc: string;
+    description: string;
+    reviews: string;
 };
 
 type ProductPageProps ={

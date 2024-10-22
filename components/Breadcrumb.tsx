@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Breadcrumb = (props: { product: any; }) => {
+type Product = {
+  id: number;
+  name: string;
+  price: string;
+}
+
+const Breadcrumb = (props: { product: Product; }) => {
     const {product} = props;
   return (
     <div className='font-sans text-meow'>

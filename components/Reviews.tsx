@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import React from 'react'
 
-const Reviews = (props: { product: any; }) => {
+type Product = {
+    id: number;
+    name: string;
+    price: string;
+    reviews: string;
+  }
+
+const Reviews = (props: { product: Product; }) => {
     const {product} = props;
   return (
     <div className='my-10 mx-32'>
