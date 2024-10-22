@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sort = () => {
   return (
-    <div className='md:px-96 p-3'>
+    <div className='md:px-96 lg:px-52 p-3'>
         <div className='w-full flex flex-col md:flex-row gap-2 md:gap-4'>
         <div className='w-[90%] md:w-1/3'>
         <div className='border border-gray-200 flex flex-row justify-between p-2 cursor-pointer'>

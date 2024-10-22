@@ -14,7 +14,7 @@ const ProductList = () => {
             alt={product.name}
             width={230}
             height={100}
-            className='w-[350px] md:w-[200px]'
+            className='w-[350px] md:w-[200px] lg:w-[180px]'
             />
             <div className='p-5'>
                 <h1 className='text-sm text-center text-meow'>{product.name}</h1>

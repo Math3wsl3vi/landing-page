@@ -3,8 +3,8 @@ import ProductList from './ProductList'
 
 const Products = () => {
   return (
-    <div className='p-3 md:px-96 flex-col flex md:flex-row items-start gap-4 mt-5'>
-        <div className='w-1/3 hidden md:block'>
+    <div className='p-3 md:px-96 lg:px-52 flex-col flex md:flex-row items-start gap-4 mt-5'>
+        <div className='md:w-1/3 hidden md:block'>
         <div>
             <h1 className=''>PRODUCT CATEGORIES</h1>
         </div>
