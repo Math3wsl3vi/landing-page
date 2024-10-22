@@ -1,5 +1,4 @@
 import Banner from '@/components/Banner';
-import Breadcrumb from '@/components/Breadcrumb';
 import Button from '@/components/Button';
 import Description from '@/components/Description';
 import Reviews from '@/components/Reviews';
