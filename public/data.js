@@ -91,7 +91,7 @@ let data_product = [
 
     },
     {
-        id:9,
+        id:10,
         name:'Flower 5',
         price: '200',
         image:'/img11.jpg',
@@ -101,7 +101,7 @@ let data_product = [
 
     },
     {
-        id:10,
+        id:11,
         name:'Flower 5',
         price: '200',
         image:'/img06.jpg',

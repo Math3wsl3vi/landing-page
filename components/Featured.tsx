@@ -15,7 +15,7 @@ const Featured = () => {
          height={30}
          className='mt-8 mb-5'
         />
-        <h2 className='text-sm my-5 text-meow'>Lorem ipsum is simply dummy text of the printing and typesetting industry.</h2>
+        <h2 className='text-sm my-5 text-meow mx-3'>Lorem ipsum is simply dummy text of the printing and typesetting industry.</h2>
     <div className='flex flex-row justify-center items-center md:justify-between md:mx-32 gap-5 flex-wrap'>
          {data_product.map((product)=>(
             <Link href={`/products/${product.id}`} key={product.id}>

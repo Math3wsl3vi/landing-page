@@ -22,7 +22,7 @@ const Description = (props: { product: Product; }) => {
          className='mb-5'
         />
       </div>
-        <div className='text-sm font-sans font-light'>{product.description}</div>
+        <div className='text-sm font-sans font-normal text-meow'>{product.description}</div>
     </div>
   )
 }

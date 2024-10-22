@@ -1,7 +1,7 @@
 import Banner from '@/components/Banner';
 import Button from '@/components/Button';
 import Description from '@/components/Description';
-import Reviews from '@/components/Reviews';
+// import Reviews from '@/components/Reviews';
 import data_product from '@/public/data';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -23,8 +23,12 @@ type ProductPageProps ={
     };
 };
 
-export default function ProductPage({params}: ProductPageProps){
-    const product: Product | undefined = data_product.find((item)=>item.id.toString() === params.id)
+// Ensure this function is async for proper handling of dynamic routes
+export default async function ProductPage({ params }: ProductPageProps) {
+    // Find the product by the id from the params
+    const product: Product | undefined = data_product.find(
+      async (item) => item.id.toString() === params.id
+    );
 
     if (!product){
         return notFound();
@@ -94,7 +98,7 @@ export default function ProductPage({params}: ProductPageProps){
        </div>    
         </div>
         <Description product={product}/>
-        <Reviews product={product}/>
+        {/* <Reviews product={product}/> */}
     </div>
   )
 }
