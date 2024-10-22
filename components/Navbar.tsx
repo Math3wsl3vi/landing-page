@@ -9,11 +9,11 @@ const Navbar = () => {
         </div>
         <div className='mt-10'>
             <ul className='md:flex flex-row gap-10 text-sm font-medium hidden'>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">STORE</a></li>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">BLOG</a></li>
-                <li><a href="/">CONTACT</a></li>
+                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>HOME</a></li>
+                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>STORE</a></li>
+                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>ABOUT</a></li>
+                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>BLOG</a></li>
+                <li><a href="/" className=' hover:text-primary hover:translate-y-2'>CONTACT</a></li>
             </ul>
         </div>
         <div className='mt-10 hidden md:flex flex-row gap-3'>

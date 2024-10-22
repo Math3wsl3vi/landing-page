@@ -40,8 +40,8 @@ const Footer = () => {
     </div>
     </div>
     <hr className='mx-52 my-10'/>
-    <div className='text-center mt-10'> 
-        <h1>Copyright 2024 by <span className='text-[#dab93a]'>Mantle Networks </span>- All right reserved</h1>
+    <div className='text-center mt-10 mb-5'> 
+        <h1>Copyright 2024 by <span className='text-primary'>Mantle Networks </span>- All right reserved</h1>
     </div>
 
     </>

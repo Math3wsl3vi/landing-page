@@ -1,3 +1,4 @@
+import Banner from '@/components/Banner';
 import Breadcrumb from '@/components/Breadcrumb';
 import Button from '@/components/Button';
 import Description from '@/components/Description';
@@ -32,35 +33,15 @@ export default function ProductPage({params}: ProductPageProps){
   return (
     <div className='mb-10'>
         {/* banner */}
-        <div className='bg-[#f5f5f5] h-[222px] mt-10 mb-20 flex justify-between items-center px-20'>
-            <div>
-            <Image
-        src='/img04.jpg'
-        alt='image'
-        width={200}
-        height={200}
-        />
-            </div>
-            <div>
-                <h1 className='text-5xl font-serif mb-5'>Shop</h1>
-                <Breadcrumb product={product}/>
-            </div>
-            <div>
-            <Image
-        src='/img03.jpg'
-        alt='image'
-        width={200}
-        height={200}
-        />
-            </div>
-        </div>
-       <div className='flex flex-row justify-center gap-10'> 
-        <div className='flex flex-col gap-2'>
+        <Banner product={product}/>
+        {/* product */}
+       <div className='flex md:flex-row flex-col justify-center items-start gap-10'> 
+        <div className='flex flex-col gap-2 px-3'>
        <div className='cursor-pointer'>
        <Image
         src={product.image}
         alt='image'
-        width={320}
+        width={390}
         height={300}
         />
        </div>
@@ -72,7 +53,7 @@ export default function ProductPage({params}: ProductPageProps){
         {/* <Image src={product.image} alt='rate' width={70} height={70}/> */}
         </div>
         </div>
-       <div className=''>
+       <div className='md:items-center px-3'>
        <h1 className='text-2xl font-medium'>{product.name}</h1>
        <h1 className='text-primary font-medium'>ksh {product.price}</h1>
        <div className='flex gap-2 my-3'>
