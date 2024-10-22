@@ -17,19 +17,21 @@ type Product={
     reviews: string;
 };
 
-type ProductPageProps ={
-    params: {
-        id: string;
-    };
-};
+interface ProductPageProps {
+    params: Promise<{ id: string }>; // Awaitable params, hence a Promise
+  }
 
 // Ensure this function is async for proper handling of dynamic routes
-export default async function ProductPage({ params }: ProductPageProps) {
-    // Find the product by the id from the params
-    const product: Product | undefined = data_product.find(
-      async (item) => item.id.toString() === params.id
-    );
 
+export default async function ProductPage({ params }: ProductPageProps) {
+    // Await params to access the `id`
+    const awaitedParams = await params;
+    
+    // Find the product by the id from the awaited params
+    const product: Product | undefined = data_product.find(
+      (item) => item.id.toString() === awaitedParams.id
+    );
+  
     if (!product){
         return notFound();
     }
