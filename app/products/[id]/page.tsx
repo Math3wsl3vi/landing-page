@@ -89,7 +89,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <option value="10">10</option>
         </select>
         </div>
+        <div>
         <Button type='button' title='Add to cart'/>
+        </div>
+        <div className=''>
+          <h1 className='text-lg'>Shipping policy :</h1>
+          <ul className='text-sm text-meow'> 
+            <li>1-2 business days</li>
+            <li>30 days money back guarantee</li>
+            <li>Free Delivery around Nakuru</li>
+          </ul>
+        </div>
         </div>
         {/* <div className='flex flex-col gap-3'>
             <h1>Share this Product:</h1>
