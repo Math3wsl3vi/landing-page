@@ -1,6 +1,7 @@
 import React from 'react'
 import data_product from '../public/data'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Featured = () => {
@@ -12,10 +13,12 @@ const Featured = () => {
          alt='thing'
          width={400}
          height={30}
-         className='my-8'
+         className='mt-8 mb-5'
         />
+        <h2 className='text-sm my-5 text-meow'>Lorem ipsum is simply dummy text of the printing and typesetting industry.</h2>
     <div className='flex flex-row justify-center items-center md:justify-between md:mx-32 gap-5 flex-wrap'>
          {data_product.map((product)=>(
+            <Link href={`/products/${product.id}`} key={product.id}>
             <div key={product.id} className='border border-gray-200 cursor-pointer'>
                 <Image 
                 src={product.image}
@@ -25,10 +28,11 @@ const Featured = () => {
                 className='w-[350px] md:w-[200px]'
                 />
                 <div className='p-5'>
-                <h2 className='text-sm text-center'>{product.name}</h2>
+                <h2 className='text-sm text-center text-meow'>{product.name}</h2>
                 <p className='text-center font-medium'>ksh {product.price}</p>
                 </div>
             </div>
+            </Link>
          ))}
     </div>
 
